@@ -102,7 +102,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgb(15, 64, 148);
     position: fixed;
     left: 0;
     right: 0;
