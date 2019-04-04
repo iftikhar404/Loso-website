@@ -5,6 +5,10 @@ body {
     margin: 0;
 }
 
+.stop-scroll {
+    overflow: hidden;
+}
+
 html {
     scroll-behavior: smooth;
 }

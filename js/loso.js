@@ -160,7 +160,9 @@ function toggleCollapsedNavbar() {
     // navbar will have 'dark-nav' class when nav links container is open
     if (navbar.classList.contains('dark-nav')) {
         window.removeEventListener('scroll', scrollEventCallBack);
+        document.body.classList.add('stop-scroll');
     } else {
         window.addEventListener('scroll', scrollEventCallBack);
+        document.body.classList.remove('stop-scroll');
     }
 }
