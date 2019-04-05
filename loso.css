@@ -599,6 +599,7 @@ textarea {
     outline: none;
     font-size: 1.3rem;
     transition: border-color 0.2s linear;
+    font-family: inherit;
 }
 
 input:focus,
@@ -621,6 +622,10 @@ form button {
     cursor: pointer;
     transition: background-color 0.5s linear;
     font-size: 1.3rem;
+    font-family: inherit;
+    box-shadow: 1px 1px 5px -1.9px rgba(0, 0, 0, 1);
+    border: 1px solid rgb(70, 138, 243);
+    outline: none;
 }
 
 form button:hover {
