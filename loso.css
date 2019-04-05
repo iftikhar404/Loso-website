@@ -141,7 +141,7 @@ nav a:hover {
 }
 
 nav.dark-nav {
-    background-color: #222;
+    background-color: rgba(0, 0, 0, 0);
     box-shadow: none;
 }
 
@@ -164,8 +164,7 @@ div.collapsed-navbar {
 }
 
 div.collapsed-navbar a {
-    padding: 20px;
-    margin: 10px 0 10px 0;
+    margin: 40px 0 0 0;
     font-size: 1.5rem;
     text-decoration: none;
     color: #fff;
