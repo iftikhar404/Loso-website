@@ -872,3 +872,33 @@ footer a {
         padding-right: 15px;
     }
 }
+
+@media only screen and (max-width: 355px) {
+    .download-image-container img {
+        width: 220px;
+    }
+
+    .available-on-container i {
+        font-size: 2rem;
+    }
+
+    .available-on-container div:last-child {
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .contact-us form {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .contact-us form input,
+    .contact-us form textarea {
+        font-size: 1rem;
+        padding: 12px 7px;
+    }
+
+    .contact-us form button {
+        font-size: 1rem;
+    }
+}
