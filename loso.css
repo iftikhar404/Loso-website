@@ -277,7 +277,7 @@ div.expand-collapsed-navbar {
 .main-points-container .third-point {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -368,6 +368,7 @@ div.expand-collapsed-navbar {
     font-size: 1.2rem;
     text-align: center;
     line-height: 150%;
+    padding: 0 30px;
 }
 
 /** to bring the slick carousel arrows within the screen **/
@@ -396,6 +397,7 @@ div.expand-collapsed-navbar {
     display: flex;
     padding: 40px 0 10px;
     justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -410,6 +412,10 @@ div.expand-collapsed-navbar {
 
 .features-content-container .second-point i {
     padding: 0 8px 0 0;
+}
+
+.features .on-right-points i {
+    margin-right: 19px;
 }
 
 /******************************
@@ -751,6 +757,17 @@ footer a {
     }
 }
 
+@media only screen and (max-width: 660px) {
+    .contact-us form div:first-child,
+    .contact-us form div:last-child {
+        flex-basis: 100%;
+    }
+
+    .contact-us form textarea {
+        margin-top: 27px;
+    }
+}
+
 @media only screen and (max-width: 640px) {
     .header-left-content h1 {
         font-size: 2.3rem;
@@ -758,6 +775,26 @@ footer a {
 
     .header-left-content a {
         font-size: 1.1rem;
+    }
+
+    .header-right-content img {
+        height: 400px;
+    }
+
+    .about-us-content-container img {
+        height: 450px;
+    }
+
+    .features-content-container img {
+        height: 380px;
+    }
+
+    .screens img {
+        width: 220px;
+    }
+
+    .download-image-container img {
+        width: 400px;
     }
 }
 
@@ -771,6 +808,10 @@ footer a {
     .header-left-content h1 {
         font-size: 1.8rem;
     }
+
+    .download-image-container img {
+        width: 360px;
+    }
 }
 
 @media only screen and (max-width: 450px) {
@@ -780,6 +821,10 @@ footer a {
 
     .about-us-right-content {
         flex-basis: 350px;
+    }
+
+    .header-right-content img {
+        height: 300px;
     }
 
     .feature-details i,
@@ -818,12 +863,8 @@ footer a {
         text-align: center;
     }
 
-    form textarea {
-        margin-top: 27px;
-    }
-
-    form div:first-child,
-    form div:last-child {
-        flex-basis: 100%;
+    .available-on-container p {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
