@@ -468,7 +468,6 @@ div.expand-collapsed-navbar {
 .screens .single-screen {
     margin: 0 20px;
     height: auto;
-    /* background: red; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -476,7 +475,6 @@ div.expand-collapsed-navbar {
 
 .screens-container {
     margin: 50px 0 0 0;
-    /* background: yellow; */
 }
 
 .screens img {
@@ -736,7 +734,6 @@ footer a {
 @media only screen and (max-width: 670px) {
     form .inputs-container {
         flex-direction: column;
-        background: red;
         align-items: center;
     }
 
@@ -779,12 +776,6 @@ footer a {
         width: 220px;
     }
 
-    .download-image-container img {
-        width: 400px;
-    }
-}
-
-@media only screen and (max-width: 560px) {
     .download-image-container img {
         width: 400px;
     }
