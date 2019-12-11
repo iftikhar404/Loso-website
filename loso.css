@@ -40,7 +40,7 @@ h2 {
 
 .active,
 div.collapsed-navbar a.active {
-    color: rgb(70, 138, 243);
+    color: #fc1;
 }
 
 /******************************
@@ -137,7 +137,7 @@ nav a {
 }
 
 nav a:hover {
-    color: rgb(43, 118, 248);
+    color: #fc1;
 }
 
 nav.dark-nav {
