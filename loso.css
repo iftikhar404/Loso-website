@@ -570,36 +570,42 @@ div.expand-collapsed-navbar {
 *******************************/
 form {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    padding: 40px 25px;
+    padding: 20px 15px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-form div {
+form .inputs-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+form .inputs-container div:first-child {
+    width: 40%;
+    height: 175px;
     display: flex;
     flex-direction: column;
-}
-
-form div:first-child {
-    flex-basis: 30%;
-    height: 220px;
     justify-content: space-between;
 }
 
-form div:last-child {
-    flex-basis: 67%;
+form .inputs-container div:last-child {
+    width: 58%;
 }
 
 input,
 textarea {
-    border: 2px solid #eee;
-    padding: 15px;
+    border: 2px solid #999;
+    padding: 10px 12px;
     border-radius: 5px;
     outline: none;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     transition: border-color 0.2s linear;
     font-family: inherit;
+    width: 100%;
 }
 
 input:focus,
@@ -609,23 +615,23 @@ textarea:focus {
 
 textarea {
     resize: none;
-    height: 130px;
     line-height: 150%;
 }
 
 form button {
-    margin: 30px 0 0 0;
+    margin: 18px 0 0 0;
     background-color: rgb(70, 138, 243);
     color: #fff;
     border-radius: 7px;
-    padding: 16px 5px;
+    padding: 10px 5px;
     cursor: pointer;
     transition: background-color 0.5s linear;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-family: inherit;
-    box-shadow: 1px 1px 5px -1.9px rgba(0, 0, 0, 1);
-    border: 1px solid rgb(70, 138, 243);
+    box-shadow: 0 0.2px 4px rgba(0, 0, 0, 0.5);
+    border: none;
     outline: none;
+    width: 130px;
 }
 
 form button:hover {
@@ -681,30 +687,6 @@ footer a {
     color: #fff;
 }
 
-@media only screen and (max-width: 870px) {
-    form div:last-child {
-        flex-basis: 66%;
-    }
-}
-
-@media only screen and (max-width: 845px) {
-    form div:last-child {
-        flex-basis: 64%;
-    }
-}
-
-@media only screen and (max-width: 795px) {
-    form div:last-child {
-        flex-basis: 62%;
-    }
-}
-
-@media only screen and (max-width: 770px) {
-    form div:last-child {
-        flex-basis: 60%;
-    }
-}
-
 @media only screen and (max-width: 736px) {
     .purchase div {
         padding: 0 20px;
@@ -722,10 +704,6 @@ footer a {
 
     .available-on-container div:first-child {
         margin-bottom: 35px;
-    }
-
-    form div:last-child {
-        flex-basis: 57%;
     }
 }
 
@@ -755,20 +733,24 @@ footer a {
     }
 }
 
-@media only screen and (max-width: 684px) {
-    form div:last-child {
-        flex-basis: 54%;
-    }
-}
-
-@media only screen and (max-width: 660px) {
-    .contact-us form div:first-child,
-    .contact-us form div:last-child {
-        flex-basis: 100%;
+@media only screen and (max-width: 670px) {
+    form .inputs-container {
+        flex-direction: column;
+        background: red;
+        align-items: center;
     }
 
-    .contact-us form textarea {
-        margin-top: 27px;
+    form .inputs-container div:first-child,
+    form .inputs-container div:last-child {
+        width: 70%;
+    }
+
+    form .inputs-container div:first-child {
+        margin-bottom: 15px;
+    }
+
+    form .inputs-container div:last-child {
+        height: 170px
     }
 }
 
@@ -815,6 +797,17 @@ footer a {
 
     .download-image-container img {
         width: 360px;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    .contact-us form {
+        padding: 12px 8px 20px;
+    }
+
+    form .inputs-container div:first-child,
+    form .inputs-container div:last-child {
+        width: 100%;
     }
 }
 

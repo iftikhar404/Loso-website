@@ -355,15 +355,17 @@
       </p>
 
       <form class="wow fadeInLeft">
-        <div>
-          <input type="text" placeholder="name" />
-          <input type="email" placeholder="email" />
-          <input type="text" placeholder="subject" />
+        <div class="inputs-container">
+          <div>
+            <input type="text" placeholder="name" />
+            <input type="email" placeholder="email" />
+            <input type="text" placeholder="subject" />
+          </div>
+          <div>
+            <textarea placeholder="message"></textarea>
+          </div>
         </div>
-        <div>
-          <textarea placeholder="message"></textarea>
-          <button>Send</button>
-        </div>
+        <button>Send</button>
       </form>
 
       <div class="wow slideinUp">
@@ -385,13 +387,15 @@
     </script>
 
     <!--Slick javascript CDN-->
-    <script type="text/javascript"
-            src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+      defer>
     </script>
 
     <!-- counter Up library-->
-    <script src="./js/jquery.waypoints.min.js"></script>
-    <script src="./js/jquery.counterup.min.js"></script>
+    <script src="./js/jquery.waypoints.min.js" defer></script>
+    <script src="./js/jquery.counterup.min.js" defer></script>
 
     <!-- wow js library-->
     <script src="./js/wow.min.js"></script>
