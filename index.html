@@ -78,7 +78,7 @@
       </p>
 
       <div class="about-us-content-container">
-        <img
+        <!-- <img
           srcset="./res/about-iphone-219w.jpg 219w,
                   ./res/about-iphone-329w.jpg 329w,
                   ./res/about-iphone-402w.jpg 402w"
@@ -88,6 +88,17 @@
           src="./res/about-iphone-402w.jpg"
           alt="holding iphone image"
           class="wow fadeInLeft"
+        /> -->
+        <img
+          data-srcset="./res/about-iphone-219w.jpg 219w,
+                  ./res/about-iphone-329w.jpg 329w,
+                  ./res/about-iphone-402w.jpg 402w"
+          data-sizes="(max-width: 355px) 219px,
+                 (max-width: 640px) 329px,
+                 402px"
+          data-src="./res/about-iphone-402w.jpg"
+          alt="holding iphone image"
+          class="wow fadeInLeft lazyload"
         />
         <div class="about-us-right-content wow fadeInRight">
           <h1>Why Choose Us</h1>
@@ -141,7 +152,7 @@
 
       <div class="testimonial-container">
         <div class="client-testimonial">
-          <img src="./res/client-01.jpg" alt="client profile pic" />
+          <img data-src="./res/client-01.jpg" alt="client profile pic" class="lazyload"/>
           <h1 class="client-name">Daniel</h1>
           <p class="occupation">Sr. Software Engineer, Blue Gyms</p>
           <p class="testimonial-statement">
@@ -152,7 +163,7 @@
         </div>
 
         <div class="client-testimonial">
-          <img src="./res/client-02.jpg" alt="client profile pic" />
+          <img data-src="./res/client-02.jpg" alt="client profile pic" class="lazyload"/>
           <h1 class="client-name">Paul Rawls</h1>
           <p class="occupation">Marketing Manager, Risko</p>
           <p class="testimonial-statement">
@@ -163,7 +174,7 @@
         </div>
 
         <div class="client-testimonial">
-          <img src="./res/client-03.jpg" alt="client profile pic" />
+          <img data-src="./res/client-03.jpg" alt="client profile pic" class="lazyload"/>
           <h1 class="client-name">Jim Fo</h1>
           <p class="occupation">Assistant Manager, Gidfo</p>
           <p class="testimonial-statement">
@@ -226,7 +237,7 @@
           </div>
         </div>
 
-        <img
+        <!-- <img
           srcset="./res/features-iphone-190w.jpg 190w,
                   ./res/features-iphone-249w.jpg 249w"
           sizes="(max-width: 640px) 190px,
@@ -234,6 +245,15 @@
           src="./res/features-iphone-249w.jpg"
           alt="features iphone image"
           class="wow bounceInUp"
+        /> -->
+        <img
+          data-srcset="./res/features-iphone-190w.jpg 190w,
+                  ./res/features-iphone-249w.jpg 249w"
+          data-sizes="(max-width: 640px) 190px,
+                 249px"
+          data-src="./res/features-iphone-249w.jpg"
+          alt="features iphone image"
+          class="wow bounceInUp lazyload"
         />
 
         <div class="feature-content wow fadeInRight">
@@ -303,53 +323,57 @@
       <div class="screens-container">
         <div class="single-screen">
           <img
-            srcset="./res/screen1-160w.png 160w,
+            data-srcset="./res/screen1-160w.png 160w,
                     ./res/screen1-220w.png 220w,
                     ./res/screen1-300w.png 300w"
-            sizes="(max-width: 355px) 160px,
+            data-sizes="(max-width: 355px) 160px,
                    (max-width: 640px) 220px,
                    300px"
-            src="./res/screen1-300w.png"
+            data-src="./res/screen1-300w.png"
             alt="iphone image"
+            class="lazyload"
           />
         </div>
 
         <div class="single-screen">
           <img
-            srcset="./res/screen2-160w.png 160w,
+            data-srcset="./res/screen2-160w.png 160w,
                     ./res/screen2-220w.png 220w,
                     ./res/screen2-300w.png 300w"
-            sizes="(max-width: 355px) 160px,
+            data-sizes="(max-width: 355px) 160px,
                    (max-width: 640px) 220px,
                    300px"
-            src="./res/screen2-300w.png"
+            data-src="./res/screen2-300w.png"
             alt="iphone image"
+            class="lazyload"
           />
         </div>
 
         <div class="single-screen">
           <img
-            srcset="./res/screen3-160w.png 160w,
+            data-srcset="./res/screen3-160w.png 160w,
                     ./res/screen3-220w.png 220w,
                     ./res/screen3-300w.png 300w"
-            sizes="(max-width: 355px) 160px,
+            data-sizes="(max-width: 355px) 160px,
                    (max-width: 640px) 220px,
                    300px"
-            src="./res/screen3-300w.png"
+            data-src="./res/screen3-300w.png"
             alt="iphone image"
+            class="lazyload"
           />
         </div>
 
         <div class="single-screen">
           <img
-            srcset="./res/screen4-160w.png 160w,
+            data-srcset="./res/screen4-160w.png 160w,
                     ./res/screen4-220w.png 220w,
                     ./res/screen4-300w.png 300w"
-            sizes="(max-width: 355px) 160px,
+            data-sizes="(max-width: 355px) 160px,
                    (max-width: 640px) 220px,
                    300px"
-            src="./res/screen4-300w.png"
+            data-src="./res/screen4-300w.png"
             alt="iphone image"
+            class="lazyload"
           />
         </div>
       </div>
@@ -392,14 +416,14 @@
 
       <div class="download-image-container">
         <img
-          srcset="./res/download-screen-360w.jpg 360w,
+          data-srcset="./res/download-screen-360w.jpg 360w,
                   ./res/download-screen-500w.jpg 500w"
-          sizes="(max-width: 535px) 360px,
+          data-sizes="(max-width: 535px) 360px,
                  (max-width: 640px) 400px,
                  500px"
-          src="./res/download-screen-500w.jpg"
+          data-src="./res/download-screen-500w.jpg"
           alt="iphone image"
-          class="wow zoomIn"
+          class="wow zoomIn lazyload"
         />
       </div>
 
@@ -471,6 +495,9 @@
 
     <!-- wow js library-->
     <script src="./js/wow.min.js"></script>
+
+    <!-- lazysizes library for loazy loading images -->
+    <script src="./js/lazysizes.min.js" async=""></script>
 
     <script src="./js/loso.js"></script>
   </body>
